@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const CertificatePage = () => {
 
-  const certificateUrl ="/certificate.png";
+  const certificateUrl ="https://sharingtest.onrender.com/certificate.png";
 
 
   const message = `Hey! Here's my certificate: ${certificateUrl}`;
@@ -16,7 +16,7 @@ const CertificatePage = () => {
         <meta property="og:title" content="My Certificate from YourWebsite" />
         <meta property="og:description" content="I just earned a certificate from YourWebsite! 🎉" />
         <meta property="og:image" content={certificateUrl} />
-        <meta property="og:url" content={certificateUrl} />
+        <meta property="og:url" content="https://sharingtest.onrender.com" />
         <meta property="og:type" content="website" />
       </Head>
 

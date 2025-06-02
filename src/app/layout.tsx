@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-   const certificateUrl ="/certificate.png";
+   const certificateUrl ="https://sharingtest.onrender.com/certificate.png";
 
   return (
     <html lang="en">
@@ -34,7 +34,7 @@ export default function RootLayout({
           content="🎉 I just earned a certificate from YourWebsite! Check it out!"
         />
         <meta property="og:image" content={certificateUrl} />
-        <meta property="og:url" content={certificateUrl} />
+        <meta property="og:url" content="https://sharingtest.onrender.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="My Certificate from YourWebsite" />

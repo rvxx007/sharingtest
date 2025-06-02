@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
- const certificateUrl ="/certificate.png";
+ const certificateUrl ="https://sharingtest.onrender.com/certificate.png";
   const shareText =
     "🎉 I just earned a certificate from YourWebsite! Check it out 👇";
   const fullShareMessage = `${shareText} ${certificateUrl}`;
@@ -22,7 +22,7 @@ export default function Home() {
           content="🎉 I just earned a certificate from YourWebsite! Check it out!"
         />
         <meta property="og:image" content={certificateUrl} />
-        <meta property="og:url" content={certificateUrl} />
+        <meta property="og:url" content="https://sharingtest.onrender.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="My Certificate from YourWebsite" />
