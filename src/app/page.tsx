@@ -2,41 +2,48 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
- const certificateUrl ="https://sharingtest.onrender.com/certificate.png";
+  const certificateUrl = "https://sharingtest.onrender.com/certificate.png";
   const shareText =
     "🎉 I just earned a certificate from YourWebsite! Check it out 👇";
   const fullShareMessage = `${shareText} ${certificateUrl}`;
 
-  const facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(certificateUrl)}`;
-  const linkedinLink = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(certificateUrl)}`;
-  const twitterLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(fullShareMessage)}`;
-  const whatsappLink = `https://wa.me/?text=${encodeURIComponent(fullShareMessage)}`;
+  const facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+    certificateUrl
+  )}`;
+  const linkedinLink = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+    certificateUrl
+  )}`;
+  const twitterLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+    fullShareMessage
+  )}`;
+  const whatsappLink = `https://wa.me/?text=${encodeURIComponent(
+    fullShareMessage
+  )}`;
 
   return (
     <>
       <Head>
-        <title>My Certificate from YourWebsite</title>
-        <meta property="og:title" content="My Certificate from YourWebsite" />
+        <title>My Certificate from ImmverseAi</title>
+        <meta property="og:title" content="My Certificate" />
+        <meta property="og:site_name" content="sharingtest" />
+        <meta property="og:url" content="sharingtest.onrender.com" />
         <meta
           property="og:description"
-          content="🎉 I just earned a certificate from YourWebsite! Check it out!"
+          content="My Certificate from ImmverseAI"
         />
-        <meta property="og:image" content={certificateUrl} />
-        <meta property="og:url" content="https://sharingtest.onrender.com" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="My Certificate from YourWebsite" />
+        <meta property="og:type" content="product" />
         <meta
-          name="twitter:description"
-          content="🎉 I just earned a certificate from YourWebsite!"
+          property="og:image"
+          content="https://sharingtest.onrender.com/certificate.png"
         />
-        <meta name="twitter:image" content={certificateUrl} />
       </Head>
 
       <main style={{ padding: "2rem", textAlign: "center" }}>
         <h1>🎓 Congratulations!</h1>
         <Image
-          src={"https://certificates.simplicdn.net/share/thumb_7487877_1729767311.png"}
+          src={
+            "https://certificates.simplicdn.net/share/thumb_7487877_1729767311.png"
+          }
           alt="Certificate"
           width={600}
           height={400}
