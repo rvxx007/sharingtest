@@ -23,26 +23,27 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My Certificate from ImmverseAi</title>
-        <meta property="og:title" content="My Certificate" />
-        <meta property="og:site_name" content="sharingtest" />
-        <meta property="og:url" content="sharingtest.onrender.com" />
-        <meta
-          property="og:description"
-          content="My Certificate from ImmverseAI"
-        />
-        <meta property="og:type" content="product" />
-        <meta
-          property="og:image"
-          content="https://sharingtest.onrender.com/certificate.png"
-        />
-      </Head>
+  <title>My Certificate from ImmverseAi</title>
+  <meta property="og:title" content="My Certificate" />
+  <meta property="og:site_name" content="sharingtest" />
+  <meta property="og:url" content="https://sharingtest.onrender.com" />
+  <meta property="og:description" content="My Certificate from ImmverseAI" />
+  <meta property="og:type" content="product" />
+  <meta property="og:image" content={certificateUrl}/>
+
+  {/* Twitter Meta Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="My Certificate" />
+  <meta name="twitter:description" content="My Certificate from ImmverseAI" />
+  <meta name="twitter:image" content={certificateUrl} />
+</Head>
+
 
       <main style={{ padding: "2rem", textAlign: "center" }}>
         <h1>🎓 Congratulations!</h1>
         <Image
           src={
-            "https://certificates.simplicdn.net/share/thumb_7487877_1729767311.png"
+            certificateUrl ?? "https://certificates.simplicdn.net/share/thumb_7487877_1729767311.png"
           }
           alt="Certificate"
           width={600}
