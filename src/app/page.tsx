@@ -42,8 +42,7 @@ export default function Home() {
       <main style={{ padding: "2rem", textAlign: "center" }}>
         <h1>🎓 Congratulations!</h1>
         <Image
-          src={
-            certificateUrl ?? "https://certificates.simplicdn.net/share/thumb_7487877_1729767311.png"
+          src={"https://sharingtest.onrender.com/certificate.png"
           }
           alt="Certificate"
           width={600}
