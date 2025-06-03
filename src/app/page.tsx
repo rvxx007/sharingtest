@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
-  const certificateUrl =
-    "https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg";
+  // const certificateUrl =
+  //   "https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg";
   const shareText =
     "🎉 I just earned a certificate from YourWebsite! Check it out 👇";
   const fullShareMessage = `${shareText} ${"https://sharingtest.onrender.com"}`;
