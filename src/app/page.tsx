@@ -2,16 +2,17 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
-  const certificateUrl = "https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg";
+  const certificateUrl =
+    "https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg";
   const shareText =
     "🎉 I just earned a certificate from YourWebsite! Check it out 👇";
-  const fullShareMessage = `${shareText} ${certificateUrl}`;
+  const fullShareMessage = `${shareText} ${"https://sharingtest.onrender.com"}`;
 
   const facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-    certificateUrl
+    "https://sharingtest.onrender.com"
   )}`;
   const linkedinLink = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-    certificateUrl
+    "https://sharingtest.onrender.com"
   )}`;
   const twitterLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
     fullShareMessage
@@ -23,26 +24,41 @@ export default function Home() {
   return (
     <>
       <Head>
-  <title>My Certificate from ImmverseAi</title>
-  <meta property="og:title" content="My Certificate" />
-  <meta property="og:site_name" content="sharingtest" />
-  <meta property="og:url" content="https://sharingtest.onrender.com" />
-  <meta property="og:description" content="My Certificate from ImmverseAI" />
-  <meta property="og:type" content="product" />
-  <meta property="og:image" content={certificateUrl}/>
+        <title>My Certificate from ImmverseAi</title>
+        <meta property="og:title" content="My Certificate" />
+        <meta property="og:site_name" content="sharingtest" />
+        <meta property="og:url" content="https://sharingtest.onrender.com" />
+        <meta
+          property="og:description"
+          content="My Certificate from ImmverseAI"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
-  {/* Twitter Meta Tags */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="My Certificate" />
-  <meta name="twitter:description" content="My Certificate from ImmverseAI" />
-  <meta name="twitter:image" content={certificateUrl} />
-</Head>
-
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="My Certificate" />
+        <meta
+          name="twitter:description"
+          content="My Certificate from ImmverseAI"
+        />
+        <meta
+          name="twitter:image"
+          content="https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg"
+        />
+      </Head>
 
       <main style={{ padding: "2rem", textAlign: "center" }}>
         <h1>🎓 Congratulations!</h1>
         <Image
-          src={"https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg"
+          src={
+            "https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg"
           }
           alt="Certificate"
           width={600}
