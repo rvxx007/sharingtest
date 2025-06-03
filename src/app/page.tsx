@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
-  const certificateUrl = "https://sharingtest.onrender.com/certificate.png";
+  const certificateUrl = "https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg";
   const shareText =
     "🎉 I just earned a certificate from YourWebsite! Check it out 👇";
   const fullShareMessage = `${shareText} ${certificateUrl}`;
@@ -42,7 +42,7 @@ export default function Home() {
       <main style={{ padding: "2rem", textAlign: "center" }}>
         <h1>🎓 Congratulations!</h1>
         <Image
-          src={"https://sharingtest.onrender.com/certificate.png"
+          src={"https://lms-uat-test.s3.ap-south-1.amazonaws.com/4db6b15a-dd1c-480b-92d2-1ed58e264f86.jpg"
           }
           alt="Certificate"
           width={600}
